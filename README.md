@@ -2,25 +2,8 @@
 意気込みを追加
 伏見：共同開発初めてですが、よろしくお願いします！
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+吉野：3X年生きてきて「オフ会」というものに初参加です。
 
-Things you may want to cover:
+大塚：チーム開発楽しみ！！！頑張ります！
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+なんぷう：皆さんお手柔らかにお願いします！！
