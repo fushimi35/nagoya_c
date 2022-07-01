@@ -1,0 +1,15 @@
+current directory: /Users/suzukitakahiro/workspace/runteq/チーム開発/nagoya_c/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+/Users/suzukitakahiro/.rbenv/versions/3.1.2/bin/ruby -I /Users/suzukitakahiro/.rbenv/versions/3.1.2/lib/ruby/site_ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /Users/suzukitakahiro/workspace/runteq/チーム開発/nagoya_c/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20220701-64332-s8h0ef sitelibdir\=./.gem.20220701-64332-s8h0ef clean
+
+current directory: /Users/suzukitakahiro/workspace/runteq/チーム開発/nagoya_c/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20220701-64332-s8h0ef sitelibdir\=./.gem.20220701-64332-s8h0ef
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/suzukitakahiro/workspace/runteq/チーム開発/nagoya_c/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20220701-64332-s8h0ef sitelibdir\=./.gem.20220701-64332-s8h0ef install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20220701-64332-s8h0ef/bootsnap
