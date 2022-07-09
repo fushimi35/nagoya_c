@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  get 'comments/create'
-  get 'comments/destroy'
+
   root :to => 'users#index'
   resources :users
   resources :recipes, except: [:index] do

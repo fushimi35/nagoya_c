@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_09_051329) do
+ActiveRecord::Schema.define(version: 2022_07_09_063837) do
 
   create_table "bookmarks", force: :cascade do |t|
     t.integer "user_id", null: false
@@ -37,8 +37,10 @@ ActiveRecord::Schema.define(version: 2022_07_09_051329) do
     t.text "body", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "recips_image"
-    t.string "#<ActiveRecord::ConnectionAdapters::SQLite3::TableDefinition:0x0000000106d012c0>"
+
+    t.string "recipe_image"
+    t.string "#<ActiveRecord::ConnectionAdapters::SQLite3::TableDefinition:0x0000000104c1acf0>"
+
     t.index ["user_id"], name: "index_recipes_on_user_id"
   end
 
