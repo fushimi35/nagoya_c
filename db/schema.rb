@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 2022_07_09_051329) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "recips_image"
-    t.string "#<ActiveRecord::ConnectionAdapters::SQLite3::TableDefinition:0x00000001137dc468>"
+    t.string "#<ActiveRecord::ConnectionAdapters::SQLite3::TableDefinition:0x0000000106d012c0>"
     t.index ["user_id"], name: "index_recipes_on_user_id"
   end
 
