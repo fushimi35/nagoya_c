@@ -1,6 +1,11 @@
 <div class="col-sm-12 col-lg-4 mb-3">
   <div id="recipe-id-1">
-    <div class="card"><%= image_tag 'sample.jpg', class: "card-img-top", width:"300", height:"200"%>
+      <div class="card">
+      <%- if recipe.recipe_image_url.nil? %>
+        <%= image_tag 'sample.jpg', class: "card-img-top", width:"300", height:"200"%>
+      <% else %>
+        <%= image_tag recipe.recipe_image_url, class: "card-img-top", width:"300", height:"200"%>
+      <% end %>
       <div class="card-body">
         <h4 class="card-title d-inline">
           <%= link_to recipe.title, recipe_path(recipe) %>

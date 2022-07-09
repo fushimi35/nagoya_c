@@ -42,3 +42,4 @@ yarn-debug.log*
 #追加
 vendor/bundle
 config/database.yml
+/public/uploads

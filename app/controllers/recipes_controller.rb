@@ -41,7 +41,6 @@ class RecipesController < ApplicationController
   private
 
   def recipe_params
-    byebug
-    params.require(:recipe).permit(:title, :body)
+    params.require(:recipe).permit(:title, :body, :recipe_image)
   end
 end
