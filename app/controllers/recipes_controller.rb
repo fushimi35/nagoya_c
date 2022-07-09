@@ -8,7 +8,6 @@ class RecipesController < ApplicationController
 
   def create
     @recipe = current_user.recipes.new(recipe_params)
-    byebug
     if @recipe.save
       redirect_to recipes_path
     else
@@ -17,6 +16,7 @@ class RecipesController < ApplicationController
   end
 
   def edit
+    @recipe = current_user.recipes.find(params[:id])
   end
 
   def show
@@ -24,14 +24,23 @@ class RecipesController < ApplicationController
   end
 
   def update
+    @recipe = current_user.recipes.find(params[:id])
+    if @recipe.update(recipe_params)
+      redirect_to recipes_path
+    else
+      render :edit
+    end
   end
 
   def destroy
+    @recipe = Recipe.find(params[:id])
+    @recipe.destroy
   end
 
   private
 
   def recipe_params
+    byebug
     params.require(:recipe).permit(:title, :body)
   end
 end
