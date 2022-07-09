@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  root :to => 'users#index'
-  resources :users
+  resources :users, only: %i[show new edit create update destroy]
 
   get 'login' => 'user_sessions#new', :as => :login
   post 'login' => "user_sessions#create"

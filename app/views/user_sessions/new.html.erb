@@ -1,6 +1,23 @@
-# app/views/user_sessions/new.html.erb
-<h1>Login</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Back', users_path %>
+<div class="container">
+  <div class="row">
+    <div class=" col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <h1>ログイン</h1>
+      <%= form_with model: @user, local: true do |f| %>
+        <div class="form-group">
+          <%= f.label :email %>
+          <%= f.email_field :email, autofocus: true, class: "form-control", id: 'email' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :password %>
+          <%= f.password_field :password, autofocus: true, class: "form-control", id: 'password' %>
+        </div>
+        <div class="actions">
+          <%= f.submit "ログイン" , class: 'btn-prymary' %>
+        </div>
+      <% end %>
+      <div class='text-center'>
+        <%= link_to '登録ページへ', new_user_path %>
+      </div>
+    </div>
+  </div>
+</div>
