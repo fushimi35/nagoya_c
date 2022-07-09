@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  resources :users, only: %i[show new edit create update destroy]
-  resources :recipes
 
   root :to => 'users#index'
   resources :users
+  resources :recipes, except: [:index] do
+    resources :comments, only: [:create, :destroy, :index]
+  end
 
   get 'login' => 'user_sessions#new', :as => :login
   post 'login' => "user_sessions#create"
