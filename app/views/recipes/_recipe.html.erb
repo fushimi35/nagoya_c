@@ -5,7 +5,12 @@
         <h4 class="card-title d-inline">
           <%= link_to recipe.title, recipe_path(recipe) %>
         </h4>
+        <% if current_user.own?(recipe) %>
+          <%= render 'crud_menus', recipe: recipe %>
+        <% end %>
         <ul class="list-inline">
+          <li class="list-inline-item"><i class="far fa-user"></i><%= recipe.user.name %></li>
+          <li class="list-inline-item"><i class="far fa-calendar"></i><%= l recipe.created_at, format: :long %></li>
         </ul>
         <p class="card-text"><%= recipe.body %></p>
       </div>

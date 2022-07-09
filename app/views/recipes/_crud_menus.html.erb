@@ -1,0 +1,12 @@
+<ul class='crud-menu-btn list-inline float-right'>
+  <li class="list-inline-item">
+    <%= link_to edit_recipe_path(recipe), id: "button-edit-#{recipe.id}" do %>
+      <%= icon 'fa', 'pen' %>
+    <% end %>
+  </li>
+  <li class="list-inline-item">
+    <%= link_to recipe_path(recipe), method: :delete, id: "button-delete-#{recipe.id}", data: {confirm: '削除しますか？'} do %>
+      <%= icon 'fas', 'trash' %>
+    <% end %>
+  </li>
+</ul>
