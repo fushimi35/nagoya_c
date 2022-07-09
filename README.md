@@ -9,3 +9,4 @@
 なんぷう：皆さんお手柔らかにお願いします！！
 
 鈴木：遅れてしまって大変申し訳ございません。こまめにmettermost見るようにします。気をつけます。
+![9EA63E0E-CEAB-4EB9-B1E5-405206325A2A-1](https://user-images.githubusercontent.com/96228122/178093262-a76c9d00-9021-4fef-9012-d417c425649e.jpg)
